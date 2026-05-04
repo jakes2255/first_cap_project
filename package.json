@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "Your first CAP win",
   "scripts": {
-    "start": "cds-serve"
+    "start": "cds-serve",
+    "watch-project1": "cds watch --open project1/index.html?sap-ui-xx-viewCache=false --livereload false"
   },
   "dependencies": {
     "@sap/cds": "^9",
@@ -11,7 +12,8 @@
     "@cap-js/sqlite": "^2"
   },
   "devDependencies": {
-    "@sap/cds-dk": "^9"
+    "@sap/cds-dk": "^9",
+    "cds-plugin-ui5": "^0.13.0"
   },
   "cds": {
     "requires": {
@@ -22,5 +24,8 @@
         }
       }
     }
-  }
+  },
+  "workspaces": [
+    "app/*"
+  ]
 }
