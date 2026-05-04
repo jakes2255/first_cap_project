@@ -1,0 +1,26 @@
+{
+  "name": "first_cap_project",
+  "version": "1.0.0",
+  "description": "Your first CAP win",
+  "scripts": {
+    "start": "cds-serve"
+  },
+  "dependencies": {
+    "@sap/cds": "^9",
+    "express": "^4",
+    "@cap-js/sqlite": "^2"
+  },
+  "devDependencies": {
+    "@sap/cds-dk": "^9"
+  },
+  "cds": {
+    "requires": {
+      "db": {
+        "kind": "sqlite",
+        "credentials": {
+          "database": "db.sqlite"
+        }
+      }
+    }
+  }
+}
